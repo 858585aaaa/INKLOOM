@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Inkloom AI — Brand governance{% endblock %}
+{% block content %}
+<section class="hero-card p-4 p-md-5">
+  <div class="eyebrow mb-3">AI-POWERED BRAND GOVERNANCE</div>
+  <h1 class="display-4 fw-bold">Consistent brands.<br><span class="accent">Confident publishing.</span></h1>
+  <p class="lead mt-3 col-lg-8">
+    Review content against approved brand guidelines before publishing. Find issues,
+    understand why they matter, and keep people in control of approval.
+  </p>
+  <div class="d-flex flex-wrap gap-2 mt-4">
+    <a class="btn btn-brand btn-lg" href="{% url 'register' %}">Create account</a>
+    <a class="btn btn-outline-dark btn-lg" href="{% url 'login' %}">Sign in</a>
+  </div>
+</section>
+
+<div class="row g-3 mt-4">
+  <div class="col-md-4">
+    <div class="feature-card h-100">
+      <h5>Guideline-led</h5>
+      <p>Use approved facts, tone and terminology.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="feature-card h-100">
+      <h5>Explainable findings</h5>
+      <p>See the issue, reason and suggested fix.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="feature-card h-100">
+      <h5>Human-controlled</h5>
+      <p>Reviewers retain the final decision.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
